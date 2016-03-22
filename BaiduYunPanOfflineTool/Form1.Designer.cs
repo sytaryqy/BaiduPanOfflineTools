@@ -50,6 +50,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.npdDelayTime = new System.Windows.Forms.NumericUpDown();
             this.panViewWindow = new System.Windows.Forms.Panel();
+            this.btnReadDirList = new System.Windows.Forms.Button();
+            this.timChangeDir = new System.Windows.Forms.Timer(this.components);
+            this.timChangDirDownload = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.npdDelayTime)).BeginInit();
             this.panViewWindow.SuspendLayout();
             this.SuspendLayout();
@@ -151,7 +154,7 @@
             // 
             // timOffileDown
             // 
-            this.timOffileDown.Interval = 600;
+            this.timOffileDown.Interval = 300;
             this.timOffileDown.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timDown
@@ -189,7 +192,7 @@
             this.ckbIsChangeDir.AutoSize = true;
             this.ckbIsChangeDir.Enabled = false;
             this.ckbIsChangeDir.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ckbIsChangeDir.Location = new System.Drawing.Point(345, 552);
+            this.ckbIsChangeDir.Location = new System.Drawing.Point(345, 528);
             this.ckbIsChangeDir.Name = "ckbIsChangeDir";
             this.ckbIsChangeDir.Size = new System.Drawing.Size(128, 16);
             this.ckbIsChangeDir.TabIndex = 11;
@@ -205,6 +208,7 @@
             this.trvFileTreeOfBaiduPan.Name = "trvFileTreeOfBaiduPan";
             this.trvFileTreeOfBaiduPan.Size = new System.Drawing.Size(190, 105);
             this.trvFileTreeOfBaiduPan.TabIndex = 12;
+            this.trvFileTreeOfBaiduPan.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvFileTreeOfBaiduPan_AfterSelect);
             // 
             // timLoadFileTree
             // 
@@ -226,7 +230,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 600);
+            this.label1.Location = new System.Drawing.Point(346, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 12);
             this.label1.TabIndex = 14;
@@ -241,7 +245,7 @@
             0,
             0,
             0});
-            this.npdDelayTime.Location = new System.Drawing.Point(395, 598);
+            this.npdDelayTime.Location = new System.Drawing.Point(396, 559);
             this.npdDelayTime.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -257,7 +261,7 @@
             this.npdDelayTime.TabIndex = 16;
             this.npdDelayTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.npdDelayTime.Value = new decimal(new int[] {
-            600,
+            1000,
             0,
             0,
             0});
@@ -271,11 +275,34 @@
             this.panViewWindow.Size = new System.Drawing.Size(832, 463);
             this.panViewWindow.TabIndex = 17;
             // 
+            // btnReadDirList
+            // 
+            this.btnReadDirList.AutoSize = true;
+            this.btnReadDirList.Enabled = false;
+            this.btnReadDirList.Location = new System.Drawing.Point(358, 597);
+            this.btnReadDirList.Name = "btnReadDirList";
+            this.btnReadDirList.Size = new System.Drawing.Size(93, 23);
+            this.btnReadDirList.TabIndex = 18;
+            this.btnReadDirList.Text = "读取网盘目录";
+            this.btnReadDirList.UseVisualStyleBackColor = true;
+            this.btnReadDirList.Click += new System.EventHandler(this.btnReadDirList_Click);
+            // 
+            // timChangeDir
+            // 
+            this.timChangeDir.Interval = 300;
+            this.timChangeDir.Tick += new System.EventHandler(this.timChangeDir_Tick);
+            // 
+            // timChangDirDownload
+            // 
+            this.timChangDirDownload.Interval = 300;
+            this.timChangDirDownload.Tick += new System.EventHandler(this.timChangDirDownload_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 695);
+            this.Controls.Add(this.btnReadDirList);
             this.Controls.Add(this.panViewWindow);
             this.Controls.Add(this.npdDelayTime);
             this.Controls.Add(this.label1);
@@ -325,6 +352,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown npdDelayTime;
         private System.Windows.Forms.Panel panViewWindow;
+        private System.Windows.Forms.Button btnReadDirList;
+        private System.Windows.Forms.Timer timChangeDir;
+        private System.Windows.Forms.Timer timChangDirDownload;
     }
 }
 

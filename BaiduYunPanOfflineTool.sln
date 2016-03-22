@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiduYunPanOfflineTool", "BaiduYunPanOfflineTool\BaiduYunPanOfflineTool.csproj", "{9569D023-9182-484B-BB0A-89D8FDFDA1CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{78E0EB82-91D1-444B-9D09-B9852F5702F4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yyc.Net", "Yyc.Net\Yyc.Net.csproj", "{5FBE92D0-B5C3-4F2C-B52E-2F7A696A729D}"
 EndProject
 Global
@@ -27,16 +25,6 @@ Global
 		{9569D023-9182-484B-BB0A-89D8FDFDA1CD}.Release|Mixed Platforms.Build.0 = Release|x86
 		{9569D023-9182-484B-BB0A-89D8FDFDA1CD}.Release|x86.ActiveCfg = Release|x86
 		{9569D023-9182-484B-BB0A-89D8FDFDA1CD}.Release|x86.Build.0 = Release|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Debug|x86.ActiveCfg = Debug|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Debug|x86.Build.0 = Debug|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Release|Any CPU.ActiveCfg = Release|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Release|Mixed Platforms.Build.0 = Release|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Release|x86.ActiveCfg = Release|x86
-		{78E0EB82-91D1-444B-9D09-B9852F5702F4}.Release|x86.Build.0 = Release|x86
 		{5FBE92D0-B5C3-4F2C-B52E-2F7A696A729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FBE92D0-B5C3-4F2C-B52E-2F7A696A729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FBE92D0-B5C3-4F2C-B52E-2F7A696A729D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
